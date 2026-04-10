@@ -28,19 +28,19 @@
   --f:"Plus Jakarta Sans",system-ui,sans-serif;
 }
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth}
-body{font-family:var(--f);color:var(--dark);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.6}
+html{scroll-behavior:smooth;overflow-x:hidden}
+body{font-family:var(--f);color:var(--dark);background:#fff;-webkit-font-smoothing:antialiased;line-height:1.6;overflow-x:hidden}
 img{display:block;max-width:100%;height:auto}
 a{text-decoration:none;color:inherit}
 ul{list-style:none}
 
 /* ── UTILS ── */
 .container{max-width:1200px;margin:0 auto;padding:0 24px}
-.btn-orange{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#fff;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .2s;white-space:nowrap}
+.btn-orange{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--orange);color:#fff;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .2s;white-space:normal;text-align:center}
 .btn-orange:hover{background:var(--orange2)}
-.btn-dark{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--dark);color:#fff;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .2s;white-space:nowrap}
+.btn-dark{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:var(--dark);color:#fff;padding:14px 32px;border-radius:50px;font-size:15px;font-weight:700;border:none;cursor:pointer;transition:background .2s;white-space:normal;text-align:center}
 .btn-dark:hover{background:var(--dark2)}
-.btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:#fff;padding:13px 28px;border-radius:50px;font-size:15px;font-weight:700;border:2px solid rgba(255,255,255,.5);cursor:pointer;transition:all .2s;white-space:nowrap}
+.btn-outline{display:inline-flex;align-items:center;justify-content:center;gap:8px;background:transparent;color:#fff;padding:13px 28px;border-radius:50px;font-size:15px;font-weight:700;border:2px solid rgba(255,255,255,.5);cursor:pointer;transition:all .2s;white-space:normal;text-align:center}
 .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.1)}
 .section-title{font-size:clamp(28px,4vw,44px);font-weight:800;color:var(--dark);text-align:center;margin-bottom:12px;line-height:1.15}
 .section-sub{font-size:16px;color:var(--gray);text-align:center;margin-bottom:44px;max-width:600px;margin-left:auto;margin-right:auto}
