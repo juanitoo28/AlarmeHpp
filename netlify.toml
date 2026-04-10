@@ -1,0 +1,39 @@
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/merci"
+  to = "/merci.html"
+  status = 200
+
+[[redirects]]
+  from = "/devis/"
+  to = "/devis.html"
+  status = 301
+
+[[redirects]]
+  from = "/contact/"
+  to = "/contact.html"
+  status = 301
+
+[[redirects]]
+  from = "/services/"
+  to = "/services.html"
+  status = 301
+
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+
+[[headers]]
+  for = "/img/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"

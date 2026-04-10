@@ -1,0 +1,13 @@
+{
+  "name": "Alarme HPP – Sécurité Île-de-France",
+  "short_name": "Alarme HPP",
+  "description": "Alarmes connectées et vidéosurveillance en Île-de-France depuis 1983",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0D1B2A",
+  "theme_color": "#E8001C",
+  "icons": [
+    { "src": "img/logo.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "img/logo.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
